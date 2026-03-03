@@ -3,12 +3,14 @@ package com.user.service.demo.entities;
 import jakarta.persistence.*;
 import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.util.ArrayList;
 import java.util.List;
 
 @Data
 @Builder
+@NoArgsConstructor
 @Entity
 @Table(name = "micro_users")
 public class User {
@@ -29,5 +31,11 @@ public class User {
     @Transient
     private List<Rating> ratings  = new ArrayList<>();
 
-
+    public User(String userId, String name, String email, String about, List<Rating> ratings) { 
+        this.userId = userId;
+        this.name = name;
+        this.email = email;
+        this.about = about;
+        this.ratings = ratings;
+    }
 }
