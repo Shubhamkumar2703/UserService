@@ -1,4 +1,4 @@
-package com.user.service.demo.entities;
+package com.user.service.UserService.entities;
 
 import jakarta.persistence.*;
 import lombok.Builder;

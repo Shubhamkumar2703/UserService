@@ -1,12 +1,14 @@
-package com.user.service.demo.entities;
+package com.user.service.UserService.entities;
 
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
+@Builder
 public class Rating {
 
     private String ratingId;
@@ -14,4 +16,6 @@ public class Rating {
     private String hotelId;
     private int rating;
     private String feedback;
+
+    private Hotel hotel;
 }

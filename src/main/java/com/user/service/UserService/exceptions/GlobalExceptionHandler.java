@@ -1,10 +1,10 @@
-package com.user.service.demo.exceptions;
+package com.user.service.UserService.exceptions;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
-import com.user.service.demo.payload.ApiResponse;
+import com.user.service.UserService.payload.ApiResponse;
 
 @RestControllerAdvice
 public class GlobalExceptionHandler {

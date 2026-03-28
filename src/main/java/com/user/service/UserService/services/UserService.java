@@ -1,6 +1,6 @@
-package com.user.service.demo.services;
+package com.user.service.UserService.services;
 
-import com.user.service.demo.entities.User;
+import com.user.service.UserService.entities.User;
 
 import java.util.List;
 
